@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Include Tailwind CSS */
+@import "tailwindcss";
+
+/* Base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Dark mode support */
+html.dark,
+html.dark body {
+  color-scheme: dark;
+}
+
+/* Custom utilities */
+.text-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.animate-float {
+  animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
